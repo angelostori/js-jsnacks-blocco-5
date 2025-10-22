@@ -11,3 +11,10 @@ for (let i = 0; i < nums.length; i++) {
     }
 }
 console.log(evenNums);
+
+nums.forEach(num => {
+    if (num % 2 === 0) {
+        evenNums.push(num)
+    }
+})
+console.log('forEach', evenNums);
