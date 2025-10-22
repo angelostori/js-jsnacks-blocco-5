@@ -28,4 +28,14 @@ for (let i = 0; i < students.length; i++) {
     myClass = student.class
   }
 }
-console.log(myClass);
+console.log('for loop', myClass)
+
+//find
+const student = students.find(s => s.name === 'Marco Lanci');
+const myClassEl = student.class;
+console.log('find', myClassEl); // '3C'
+
+//filter
+const result = students.filter(s => s.name === 'Marco Lanci');
+filterClass = result[0].class;
+console.log('filter', filterClass); // '3C'
