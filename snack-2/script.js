@@ -13,3 +13,8 @@ for (let i = 0; i < people.length; i++) {
   console.log(thisPersonName);
   
 }
+
+people.forEach(function(person) {
+  console.log(person.name)
+  
+})
